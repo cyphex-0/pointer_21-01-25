@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <windows.h>
 
 typedef struct
 {
@@ -49,7 +50,9 @@ int main()
             break;
         case 5:
             freeLibrary(library);
-            printf("Exiting program. Memory deallocated.\n");
+            printf("Exiting program.\n");
+            Sleep(500);
+            printf("Memory deallocated.\n");
             break;
         default:
             printf("Invalid choice. Try again.\n");
